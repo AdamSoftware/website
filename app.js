@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/", (_, response) => {
-  response.sendfile(path.join(Root, "index.html"));
+  response.sendFile(path.join(Root, "index.js"));
 });
 
 const message = `Server running: http://localhost:${port}`;
